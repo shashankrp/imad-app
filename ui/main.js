@@ -4,7 +4,11 @@ element.innerHTML= 'New value';
 
 //move the image
 var img=document.getElementById('madi');
+var marginLeft = 0;
+function movRigth(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
+}
 img.onclick=function(){
-    var interval(movLeft,100);
-    img.style.marginLeft='100px';
+    var interval=setInterval(movRigth,100)
 }
