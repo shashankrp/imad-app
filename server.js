@@ -23,7 +23,7 @@ var articleone ={
 };
 
 
-function createTemplete(date){
+function createTemplete(data){
 var title=data.title;
 var header=data.header;
 var content=data.content;
