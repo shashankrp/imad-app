@@ -23,6 +23,10 @@ var articalone ={
 };
 
 
+function createTemplete(date){
+var title=data.title;
+var header=data.header;
+var content=data.content;
 var htmlTemplate=`<html>
     <head>
         <title>
@@ -49,13 +53,9 @@ var htmlTemplate=`<html>
             </div>
         </body>
 </html>
-
-
-
-
-
-
 `;
+return htmTemplete;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -66,7 +66,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
+   res.send(createTemplete(articleone)); 
 });
 
 app.get('/article-two',function(req,res){
