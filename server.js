@@ -27,6 +27,7 @@ function createTemplate (data){
 var title=data.title;
 var heading=data.heading;
 var content=data.content;
+var date=data.date;
 
 var htmlTemplate = 
   `<html>
