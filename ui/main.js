@@ -1,6 +1,6 @@
 var button=document.getElementById("counter");
 button.onclick = function(){
-    //make a request to the counter endpoint
+    //Create a request object
     var request = new XMLHttpRequest();
     
     //capture the response and store it in a variable
@@ -15,5 +15,7 @@ button.onclick = function(){
         }
         //Not done yet
     };
-    //Render the variable in the correct span
+    //Make the request
+    request.open('GET','http://shashankrp2.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
