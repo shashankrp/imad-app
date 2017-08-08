@@ -71,7 +71,7 @@ app.get('/counter',function(req,res){
 });
 
 var names = [];
-app.get('/submit-namee',function(req,res){
+app.get('/submit-name',function(req,res){
     //Get the name from the request
     var name = req.query.name;
         
