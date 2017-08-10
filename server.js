@@ -13,8 +13,6 @@ var config = {
 };
 
 
-var app = express();
-app.use(morgan('combined'));
 
 var articleOne ={
   title: 'Article one I Shashank',
